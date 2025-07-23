@@ -1,0 +1,505 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <style>
+    @font-face {
+      font-family: 'NoonnuBasicGothicRegular';
+      src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      font-family: 'NoonnuBasicGothicRegular';
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+      animation-delay: var(--delay);
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      0% {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes zoomIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .fade-in-left {
+      opacity: 0;
+      animation: fadeInLeft 1s forwards;
+      animation-delay: var(--delay);
+    }
+
+    .fade-in-right {
+      opacity: 0;
+      animation: fadeInRight 1s forwards;
+      animation-delay: var(--delay);
+    }
+
+    .zoom-in {
+      opacity: 0;
+      animation: zoomIn 0.8s forwards;
+      animation-delay: var(--delay);
+    }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>김도은 포트폴리오</title>
+</head>
+  <body class="bg-gray-900 text-gray-100">
+    <!-- 네비게이션 -->
+    <nav
+  class="fixed w-full bg-gray-800 bg-opacity-80 backdrop-blur-sm p-4 flex justify-center space-x-8 z-50"
+>
+  <a href="#home" class="hover:text-sky-400 transition-colors duration-300">홈</a>
+  <a href="#aboutme" class="hover:text-sky-400 transition-colors duration-300">About Me</a>
+  <a href="#school" class="hover:text-sky-400 transition-colors duration-300">학력사항</a>
+  <a href="#certificate" class="hover:text-sky-400 transition-colors duration-300">자격증</a>
+  <a href="#education" class="hover:text-sky-400 transition-colors duration-300">교육이수</a>
+  <a href="#skills" class="hover:text-sky-400 transition-colors duration-300">기술</a>
+  <a href="#projects" class="hover:text-sky-400 transition-colors duration-300">프로젝트</a>
+  <a href="#contact" class="hover:text-sky-400 transition-colors duration-300">연락처</a>
+</nav>
+
+
+    <!-- 홈 섹션 -->
+    <section
+      id="home"
+      class="min-h-screen flex flex-col items-center justify-center text-center px-4"
+    >
+      <img
+        src="mypicture.jpg"
+        alt="김도은 프로필"
+        class="w-48 h-48 rounded-full mb-6 fade-in"
+        style="--delay: 0s"
+      />
+      <h1 class="text-5xl font-bold mb-4 fade-in" style="--delay: 0.3s">
+        김도은
+      </h1>
+      <p class="text-xl max-w-xl mb-4 fade-in" style="--delay: 0.6s">
+        꾸준히 배우고 성장하는 백엔드 개발자 김도은입니다.
+      </p>
+      <h3 class="text-s max-w-xl fade-in" style="--delay: 0.9s">
+        반갑습니다. 저는 서비스의 핵심 로직과 데이터 흐름을 책임지는 백엔드
+        개발자 김도은입니다. 이 포트폴리오는 저의 성장 과정과 기술들을 담은
+        공간입니다. 방문해 주셔서 진심으로 감사드립니다!
+      </h3>
+    </section>
+
+    <!--나에 대한 소개, 인터뷰-->
+    <section id="aboutme" class="py-20 bg-gray-800 px-6 text-white">
+      <h1 class="text-5xl font-bold mb-12 text-center">ABOUT ME</h1>
+    
+      <div class="space-y-10 max-w-4xl mx-auto">
+        <!-- Q1 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+          <h2 class="text-xl font-bold mb-2 text-sky-400">Q. 간단하게 자기소개 해주세요.</h2>
+          <p>
+            A. 안녕하세요 꾸준히 성장해나가는 개발자 김도은입니다.
+            저는 컴퓨터정보공학부를 복수전공하며 운영체제, 데이터 통신
+            데이터베이스 설계 등 여러 가지 이론을 공부하게 되었고
+            더불어 학원에서의 추가적인 프로그래밍 언어 공부 및 팀프로젝트
+            경험으로 Spring Boot, JPA, SQL 등을 익혀 왔으며
+            이 과정에서 백엔드 개발자를 꿈꾸며 성장하고 있습니다.
+            저는 더욱 나은 구조와 효율적인 코드를 짜기 위해 계속해서
+            고민하는 편입니다.
+          </p>
+        </div>
+    
+        <!-- Q2 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+          <h2 class="text-xl font-bold mb-2 text-sky-400">Q. 백엔드 개발에서 가장 흥미로운 부분은 무엇인가요?</h2>
+          <p>
+            A. 개발을 처음 접할 당시만 하여도 눈에 보여지는 부분이 더욱
+            매력적이라고 생각하였지만 공부를 하면 할수록 오히려 사용자가 직접
+            눈으로 보지 못하는 서버 내부의 흐름을 설계하는 과정에 큰 매력을
+            느끼게 되었습니다. 특히 저는 데이터베이스 설계, 트랜잭션 처리, 데이터 흐름도를
+            작성하는 과정에 가장 큰 흥미를 느낍니다.
+          </p>
+        </div>
+    
+        <!-- Q3 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+          <h2 class="text-xl font-bold mb-2 text-sky-400">Q. 협업 경험이 있다면, 어떤 방식으로 팀과 소통했나요?</h2>
+          <p>
+            A. 학원에서의 팀 프로젝트를 통해 협업을 경험했습니다. 
+ShopNova라는 쇼핑몰 프로젝트를 진행했었고, 세부 사항을 정한뒤
+각자의 역할을 명확하게 나눈 뒤 Notion으로 업무를 정리했습니다.
+또한 평일에는 디스코드나 줌으로 각자의 작업 상황과 이슈를 공유했고,
+주말에는 직접 만나서 대화하고, 서로의 오류나 문제를 공유하며 최대한
+같이 해결하려고 노력을 많이 하였습니다.
+          </p>
+        </div>
+    
+        <!-- Q4 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+          <h2 class="text-xl font-bold mb-2 text-sky-400">Q. 개발자로서 어떤 방향으로 성장하고 싶나요?</h2>
+          <p>
+            A. 저는 문제 상황을 정확이 이해하고 사용자가 원하는 방향으로
+해결할 줄아는 개발자가 되고 싶습니다. 신입인 지금부터 조금씩
+공부와 경험을 통해 실력을 쌓으며 대체 불가능한 개발자로 성장
+하는 것이 저의 목표입니다.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+
+    <!--학력-->
+    <section id="school" class="py-20 flex flex-col items-center justify-center text-center px-4">
+        <h2 class="text-5xl font-bold mb-4">학력사항</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="font-bold text-2xl">Choeun High School</h3>
+                <div class="subheading mb-3 font-noto">인문계열 이과</div>
+            </div>
+            <div class="flex-shrink-0">
+                <span class="text-sky-400">March 2017 - Feburary 2020</span>
+            </div>
+        </div>
+        <div>
+            <div class="flex-grow-1">
+                <h3 class="font-bold text-2xl">Catholic University</h3>
+                <div class="subheading mb-3 font-noto">1전공: 공간디자인소비자학과 / 복수전공: 컴퓨터정보공학부</div>
+            </div>
+            <div class="flex-shrink-0">
+                <span class="text-sky-400">March 2022 ~</span>
+            </div>
+        </div>
+    </section>
+
+    <!--자격증-->
+    <section  id="certificate" class="py-20 bg-gray-800 px-6">
+        <h1 class="text-5xl font-bold mb-4 fade-in text-center" style="--delay: 0.3s">
+            자격증
+          </h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <!--자격증1-->
+          <div class="bg-gray-700 p-6 rounded-lg shadow-md flex items-center gap-6 h-60">
+            <!-- 왼쪽: 이미지 -->
+            <div class="flex-shrink-0 h-full flex items-center">
+              <img
+                src="sqld.JPG"
+                alt="sqld"
+                class="h-full object-contain"
+              />
+            </div>
+          
+            <!-- 오른쪽: 텍스트 -->
+            <div class="text-white text-base font-medium leading-relaxed space-y-1">
+              <p> <strong>SQL 개발자 (SQLD)</strong></p>
+              <p>발급기관: 한국데이터산업진흥원</p>
+              <p>취득일: <strong>2024.09</strong></p>
+            </div>
+          </div>
+          
+
+          <!--자격증2-->
+          <div class="bg-gray-700 p-6 rounded-lg shadow-md flex items-center gap-6 h-60">
+            <!-- 왼쪽: 이미지 -->
+            <div class="flex-shrink-0 h-full flex items-center">
+              <img
+                src="adsp.JPG"
+                alt="adsp"
+                class="h-full object-contain"
+              />
+            </div>
+          
+            <!-- 오른쪽: 텍스트 -->
+            <div class="text-white text-base font-medium leading-relaxed space-y-1">
+              <p> <strong>데이터 분석 준전문가(Adsp)</strong></p>
+              <p>발급기관: 한국데이터산업진흥원</p>
+              <p>취득일: <strong>2024.11</strong></p>
+            </div>
+          </div>
+          <!--자격증3-->
+          <div class="bg-gray-700 p-6 rounded-lg shadow-md flex items-center gap-6 h-60">
+            <!-- 왼쪽: 이미지 -->
+            <div class="flex-shrink-0 h-full flex items-center">
+              <img
+                src="pcce.JPG"
+                alt="pcce"
+                class="h-full object-contain"
+              />
+            </div>
+          
+            <!-- 오른쪽: 텍스트 -->
+            <div class="text-white text-base font-medium leading-relaxed space-y-1">
+              <p> <strong>PCCE(LV.2)</strong></p>
+              <p>발급기관: 그랩</p>
+              <p>취득일: <strong>2025.01</strong></p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!--교육이수-->
+    <section id="education" class="py-28 min-h-screen flex flex-col items-center justify-center text-center px-4">
+      <h2 class="text-5xl font-bold mb-12 text-center">교육이수</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <!-- 카드 1 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+          <p class="text-sm text-gray-300 mb-2">2024.04 - 2024.08</p>
+          <h3 class="text-2xl font-bold">Korea IT Academy</h3>
+          <p class="text-sm text-gray-300 mb-4">@ 웹개발 1, 2, 3, 4 과정</p>
+          <ul class="list-disc list-inside text-gray-200 space-y-1">
+            <li>1개월차 : Html, Css 및 Notion, Git 협업 툴 활용</li>
+            <li>2개월차 : JavaScript, TypeScript 언어 + HTTP 프로토콜</li>
+            <li>3개월차 : React + SQL문 </li>
+            <li>4개월차 : Java+Spring Boot 사용 및 팀 프로젝트 경험</li>
+            <li>응용SW기초 기술 활용 
+              : CLI/GUI 기본 명령어 활용 및 클라우드 컴퓨팅 서비스 기반의 개발환경 구축/ 네트워크 osi7계층 구조의 이해 </li>
+            
+            <div class="text-sky-400">선행 과정</div>
+
+            <li>Java(2023.12 - 2024.01)</li>
+            <li>Python(2024.02 - 2024.03)</li>
+            <li>C(2024.03 - 2024.04)</li>
+          </ul>
+          <div class="flex gap-3 mt-4 items-center justify-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-7 h-7" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" class="w-7 h-7" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-7 h-7" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-7 h-7" />
+          </div>
+        </div>
+    
+        <!-- 카드 2 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+          <p class="text-sm text-gray-300 mb-2">2024.08 - 2025.02</p>
+          <h3 class="text-2xl font-bold">Korea IT Academy</h3>
+          <p class="text-sm text-gray-300 mb-4">@ 응용SW엔지니어링 교육</p>
+          <ul class="list-disc list-inside text-gray-200 space-y-1">
+            <li>1. 프로그래밍 언어 활용 
+              : JAVA / 라이브러리 활용</li>
+            <li>2. 화면구현(HTML, CSS, JS, Figma) 
+              :  Wireframe & UI 설계 및 구현</li>
+            <li>3. 데이터 입출력 구현 (Oracle DB/sqlplus)
+              : 테이블 설계 및 구축, DML DDL DCL TCL 문법 기반 프로시저 함수 작성 </li>
+            <li>4. 서버프로그램 구현 (eclipse, HTML, CSS, Visual Studio, JSP, jstl, jquery, js, spring, oracleDB, bootstrap)
+              : 개발환경 구축, 공통 모듈 구현 및 테스트, Servlet/JSP기반 서버프로그램 구현 및 단위테스트, 배치프로그램 구현 및 테스트</li>
+            <li>5. 애플리케이션 테스트 수행(JUnit,Git)
+              : 테스트 케이스 작성, 명세 기반의 모듈 단위 테스트, 통합/시스템 테스트, 형상관리도구를 활용한 단계별 리소스 분석 및 결함 조치</li>
+            <li>6. 쇼핑몰 프로젝트 협업 및 완성(1개월 소요)</li>
+          </ul>
+          <div class="flex gap-3 mt-4 items-center justify-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-7 h-7" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" class="w-7 h-7" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter" class="w-7 h-7" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 기술 섹션 -->
+    <section id="skills" class="py-20 bg-gray-800 px-6">
+      <h2
+        class="text-3xl font-semibold text-center mb-12 fade-in"
+        style="--delay: 0s"
+      >
+        기술 스택
+      </h2>
+      <div
+        class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-8 text-center"
+      >
+      <div class="fade-in text-center" style="--delay: 0.1s">
+        <img
+            src="python.png"
+            alt="Docker"
+            class="mx-auto mb-2 w-12 h-12"
+          />
+        <p>Python</p>
+      </div>
+      
+        <div class="fade-in" style="--delay: 0.2s">
+            <img
+            src="java.png"
+            alt="Docker"
+            class="mx-auto mb-2 w-12 h-12"
+          />
+          <p>Java</p>
+        </div>
+        <div class="fade-in" style="--delay: 0.3s">
+            <img
+            src="javascript.png"
+            alt="Docker"
+            class="mx-auto mb-2 w-12 h-12"
+          />
+          <p>JavaScript</p>
+        </div>
+        <div class="fade-in" style="--delay: 0.4s">
+          <img
+            src="springboot.png"
+            alt="Docker"
+            class="mx-auto mb-2 w-12 h-12"
+          />
+          <p>SpringBoot</p>
+        </div>
+        <div class="fade-in" style="--delay: 0.4s">
+          <img
+            src="sql.png"
+            alt="Docker"
+            class="mx-auto mb-2 w-12 h-12"
+          />
+          <p>SQL</p>
+        </div>
+        <div class="fade-in" style="--delay: 0.4s">
+          <img
+            src="html.png"
+            alt="Docker"
+            class="mx-auto mb-2 w-12 h-12"
+          />
+          <p>Html</p>
+        </div>
+        <div class="fade-in" style="--delay: 0.4s">
+          <img
+            src="css.png"
+            alt="Docker"
+            class="mx-auto mb-2 w-12 h-12"
+          />
+          <p>Css</p>
+        </div>
+        <div class="fade-in" style="--delay: 0.4s">
+          <img
+            src="thymeleaf.jpg"
+            alt="Docker"
+            class="mx-auto mb-2 w-12 h-12"
+          />
+          <p>Thymeleaf</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 프로젝트 섹션 -->
+    <section id="projects" class="py-20 px-6">
+      <h2
+        class="text-3xl font-semibold text-center mb-12 fade-in"
+        style="--delay: 0s"
+      >
+        프로젝트
+      </h2>
+      <div class="max-w-4xl mx-auto grid gap-8 sm:grid-cols-2">
+        <div
+          class="bg-gray-800 p-6 rounded-lg shadow-lg fade-in"
+          style="--delay: 0.1s"
+        >
+          <h3 class="text-xl font-bold mb-2">프로젝트 1(ShopNoVa)</h3>
+          <img
+            src="shopnova.JPG"
+            alt="Docker"
+            class="mx-auto mb-2 w-45 h-45"
+          />
+          <p>📆개발 기간: 2025.01.19~2025.02.16</p>
+          <p>⌨️사용 기술: SpringBoot, H2 DB, JPA, Naver Login, KGInicis API</p>
+          <p>👨‍💻담당 역할: 상품 관련 DB 설계, 상품 프론트 디자인 및 개발, 장바구니+상품 CRUD, RESTFUL API 설계 및 개발</p>
+          <p>📌느낀점: DB설계를 하고 구현하며 초반 데이터베이스 설계 과정의 중요성을 깨닫게 되었습니다</p>
+          <a href="#" class="text-blue-400 hover:underline mt-2 inline-block"
+            >자세히 보기</a
+          >
+        </div>
+        <div
+          class="bg-gray-800 p-6 rounded-lg shadow-lg fade-in"
+          style="--delay: 0.2s"
+        >
+          <h3 class="text-xl font-bold mb-2">프로젝트 2</h3>
+          <p>프로젝트 설명 간단하게 작성</p>
+          <a href="#" class="text-blue-400 hover:underline mt-2 inline-block"
+            >자세히 보기</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- 연락처 섹션 -->
+    <section id="contact" class="py-20 bg-gray-800 px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-6 fade-in" style="--delay: 0s">
+        Contact Me!
+      </h2>
+      <p class="mb-4 fade-in" style="--delay: 0.2s">
+        이메일: a01093538938@gmail.com
+      </p>
+      <p class="fade-in" style="--delay: 0.3s">
+        GitHub:
+        <a
+          href="https://github.com/Doeunkim31004"
+          class="text-blue-400 hover:underline"
+          >https://github.com/Doeunkim31004</a
+        >
+      </p>
+      <p class="fade-in" style="--delay: 0.3s">
+        Velog:
+        <a
+          href="https://velog.io/@doeunkim31004/posts"
+          class="text-blue-400 hover:underline"
+          >https://velog.io/@doeunkim31004/posts</a
+        >
+      </p>
+      <p class="fade-in" style="--delay: 0.3s">
+        Notion:
+        <a
+          href="https://www.notion.so/16bf4d0e061443c1908f0dbfec93c19d"
+          class="text-blue-400 hover:underline"
+          >https://www.notion.so/16bf4d0e061443c1908f0dbfec93c19d</a
+        >
+      </p>
+    </section>
+    <script>
+      const fadeEls = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .zoom-in');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.animationPlayState = 'running';
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+  
+      fadeEls.forEach((el) => {
+        el.style.animationPlayState = 'paused';
+        observer.observe(el);
+      });
+    </script>
+  </body>
+
+</html>

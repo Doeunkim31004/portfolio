@@ -1,0 +1,29 @@
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header,
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1f1f1f;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: bold;
+}
+main {
+  padding: 3rem;
+  text-align: center;
+}
